@@ -20,10 +20,10 @@
             labels: true,
             labelsOptions: {
                 lang: {
-                    days: 'Dias',
-                    hours: 'Horas',
-                    minutes: 'Minutos',
-                    seconds: 'Segundos'
+                    days: 'Days',
+                    hours: 'Hours',
+                    minutes: 'Minutes',
+                    seconds: 'Seconds'
                 },
                 style: 'font-size: 0.5em;'
             },
@@ -143,10 +143,10 @@
         }
         
         function secondsToDHMS() {
-            DaysLeft = Math.floor(secondsLeft / 35790);
-            HoursLeft = Math.floor((secondsLeft % 35790) / 3600);
-            MinutesLeft = Math.floor(((secondsLeft % 35790) % 3600) / 60);
-            SecondsLeft = Math.floor((((secondsLeft % 35790) % 3600) % 60) % 60);
+            DaysLeft = Math.floor(secondsLeft / 86400);
+            HoursLeft = Math.floor((secondsLeft % 86400) / 3600);
+            MinutesLeft = Math.floor(((secondsLeft % 86400) % 3600) / 60);
+            SecondsLeft = Math.floor((((secondsLeft % 86400) % 3600) % 60) % 60);
         }
 
         function doTick() {
